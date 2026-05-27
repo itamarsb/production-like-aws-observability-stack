@@ -42,25 +42,44 @@ This repository is also part of my professional transition into Cloud, DevOps, S
 ## High-Level Architecture
 
 ```text
-Developer
-    ↓
-GitHub Repository
-    ↓
-GitHub Actions CI/CD
-    ↓
-Amazon ECR
-    ↓
-Amazon ECS Cluster
-    ↓
-Containerized Application
-    ↓
-Amazon RDS PostgreSQL
+                ┌─────────────────┐
+                │     GitHub      │
+                └────────┬────────┘
+                         │
+                         ▼
+                ┌─────────────────┐
+                │ GitHub Actions  │
+                └────────┬────────┘
+                         │
+                         ▼
+                ┌─────────────────┐
+                │   Amazon ECR    │
+                └────────┬────────┘
+                         │
+                         ▼
+          ┌────────────────────────────┐
+          │       Amazon ECS           │
+          │                            │
+          │   Frontend Container       │
+          │   Backend Container        │
+          └────────────┬───────────────┘
+                       │
+                       ▼
+          ┌────────────────────────────┐
+          │ Amazon RDS PostgreSQL      │
+          └────────────────────────────┘
 
-Observability Stack:
-- Prometheus
-- Grafana
-- Loki
-- OpenTelemetry
+                       │
+                       ▼
+
+      ┌─────────────────────────────────┐
+      │     Observability Stack         │
+      │                                 │
+      │ Prometheus                      │
+      │ Grafana                         │
+      │ Loki                            │
+      │ OpenTelemetry                   │
+      └─────────────────────────────────┘
 ```
 
 ---
