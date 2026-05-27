@@ -5,38 +5,71 @@ Production-like AWS deployment using Docker, ECS, RDS, Terraform, GitHub Actions
 production-like-aws-observability-stack/
 
 ├── README.md
+
 ├── LICENSE
+
 ├── .gitignore
+
 ├── docker-compose.yml
+
 ├── docs/
+
 │   ├── architecture.md
+
 │   ├── deployment-guide.md
+
 │   ├── observability-guide.md
+
 │   ├── troubleshooting.md
+
 │   └── cost-estimation.md
+
 ├── diagrams/
+
 │   ├── architecture.drawio
+
 │   └── architecture.png
+
 ├── app/
+
 │   ├── frontend/
+
 │   └── backend/
+
 ├── infra/
+
 │   └── terraform/
+
 │       ├── main.tf
+
 │       ├── variables.tf
+
 │       ├── outputs.tf
+
 │       └── README.md
+
 ├── observability/
+
 │   ├── prometheus/
+
 │   ├── grafana/
+
 │   ├── loki/
+
 │   └── otel-collector/
+
 ├── scripts/
+
 │   ├── build.sh
+
 │   ├── deploy.sh
+
 │   └── destroy.sh
+
 ├── screenshots/
+
 └── .github/
+
     └── workflows/
         └── ci-cd.yml
 
