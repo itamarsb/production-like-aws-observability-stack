@@ -1,0 +1,13 @@
+- [x] Local Docker environment
+- [x] AWS EC2 deployment
+- [x] PostgreSQL with Amazon RDS
+- [x] Image registry with Amazon ECR
+- [x] Container orchestration with Amazon ECS
+- [ ] Infrastructure as Code with Terraform
+- [ ] CI/CD with GitHub Actions
+- [ ] Metrics with Prometheus
+- [ ] Dashboards with Grafana
+- [ ] Logs with Loki
+- [ ] Traces with OpenTelemetry
+- [ ] Alerting rules
+- [ ] Final architecture documentation
