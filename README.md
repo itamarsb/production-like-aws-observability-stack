@@ -37,7 +37,6 @@ This repository is also part of my professional transition into Cloud, DevOps, S
 
 ---
 
-```md
 ## High-Level Architecture
 
 ![Architecture](diagrams/high-level-architecture.png)
