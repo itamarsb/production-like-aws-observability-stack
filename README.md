@@ -42,44 +42,9 @@ This repository is also part of my professional transition into Cloud, DevOps, S
 ## High-Level Architecture
 
 ```text
-                ┌─────────────────┐
-                │     GitHub      │
-                └────────┬────────┘
-                         │
-                         ▼
-                ┌─────────────────┐
-                │ GitHub Actions  │
-                └────────┬────────┘
-                         │
-                         ▼
-                ┌─────────────────┐
-                │   Amazon ECR    │
-                └────────┬────────┘
-                         │
-                         ▼
-          ┌────────────────────────────┐
-          │       Amazon ECS           │
-          │                            │
-          │   Frontend Container       │
-          │   Backend Container        │
-          └────────────┬───────────────┘
-                       │
-                       ▼
-          ┌────────────────────────────┐
-          │ Amazon RDS PostgreSQL      │
-          └────────────────────────────┘
 
-                       │
-                       ▼
+![Architecture](diagrams/high-level-architecture.png)
 
-      ┌─────────────────────────────────┐
-      │     Observability Stack         │
-      │                                 │
-      │ Prometheus                      │
-      │ Grafana                         │
-      │ Loki                            │
-      │ OpenTelemetry                   │
-      └─────────────────────────────────┘
 ```
 
 ---
